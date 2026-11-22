@@ -1,0 +1,8 @@
+{
+  "name": "Passion Human Resource — International Manpower Recruitment",
+  "description": "Licensed overseas recruitment agency in Kathmandu, Nepal connecting vetted Nepalese talent with global employers across the Middle East, Europe, and North America.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
