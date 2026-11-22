@@ -161,6 +161,7 @@ export function CategoryJobsView({
                   src={category.imageSrc}
                   alt={category.imageAlt}
                   fallbackTitle={category.title}
+                  priority
                   className="w-full h-full object-cover object-center"
                 />
               </div>

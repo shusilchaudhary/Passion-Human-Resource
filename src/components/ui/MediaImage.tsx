@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Building2 } from 'lucide-react';
 
 interface MediaImageProps {
@@ -6,6 +6,7 @@ interface MediaImageProps {
   alt: string;
   fallbackTitle: string;
   className?: string;
+  priority?: boolean;
 }
 
 export function MediaImage({
@@ -13,8 +14,20 @@ export function MediaImage({
   alt,
   fallbackTitle,
   className = '',
+  priority = false,
 }: MediaImageProps) {
   const [hasError, setHasError] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement | null>(null);
+
+  useEffect(() => {
+    setHasError(false);
+    if (imgRef.current?.complete && imgRef.current.naturalWidth > 0) {
+      setLoaded(true);
+    } else {
+      setLoaded(false);
+    }
+  }, [src]);
 
   if (hasError) {
     return (
@@ -31,11 +44,19 @@ export function MediaImage({
 
   return (
     <img
+      ref={imgRef}
       src={src}
       alt={alt}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding="async"
+      fetchPriority={priority ? 'high' : 'auto'}
       referrerPolicy="no-referrer"
+      onLoad={() => setLoaded(true)}
       onError={() => setHasError(true)}
-      className={className}
+      className={`${className} transition-opacity duration-300 ${
+        loaded ? 'opacity-100' : 'opacity-0'
+      }`}
     />
   );
 }
+

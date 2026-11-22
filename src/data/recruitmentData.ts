@@ -1,3 +1,13 @@
+import sectorLogisticsPortrait from '../assets/images/sector_logistics_worker_1795355263931.webp';
+import sectorConstructionPortrait from '../assets/images/sector_construction_engineer_1795355266247.webp';
+import sectorHospitalityPortrait from '../assets/images/sector_hospitality_chef_1795355265802.webp';
+import sectorAgriculturePortrait from '../assets/images/sector_agriculture_specialist_1795355266021.webp';
+import kathmanduSkylineBanner from '../assets/images/kathmandu_corporate_skyline_1795355265582.webp';
+import logisticsLandscapeBanner from '../assets/images/logistics_landscape_banner_1795357071489.webp';
+import constructionLandscapeBanner from '../assets/images/construction_landscape_banner_1795357073324.webp';
+import hospitalityLandscapeBanner from '../assets/images/hospitality_landscape_banner_1795357073475.webp';
+import agricultureLandscapeBanner from '../assets/images/agriculture_landscape_banner_1795357073665.webp';
+
 export interface WorkforcePanel {
   id: string;
   categorySlug: string;
@@ -75,7 +85,7 @@ export const HERO_WORKFORCE_PANELS: WorkforcePanel[] = [
     sector: 'Logistics & Supply Chain',
     roleSample: 'Warehouse Supervisors & Fleet Drivers',
     readinessWindow: '14-Day Shortlist',
-    imageSrc: '/src/assets/images/sector_logistics_worker_1795355263931.jpg',
+    imageSrc: sectorLogisticsPortrait,
     imageAlt: 'Nepalese logistics supervisor with inventory tablet inside an automated distribution facility',
   },
   {
@@ -84,7 +94,7 @@ export const HERO_WORKFORCE_PANELS: WorkforcePanel[] = [
     sector: 'Civil & Industrial',
     roleSample: 'Site Technicians & Heavy Operators',
     readinessWindow: '21-Day Trade Test',
-    imageSrc: '/src/assets/images/sector_construction_engineer_1795355266247.jpg',
+    imageSrc: sectorConstructionPortrait,
     imageAlt: 'Nepalese civil construction engineer wearing yellow safety helmet at an infrastructure site',
   },
   {
@@ -93,7 +103,7 @@ export const HERO_WORKFORCE_PANELS: WorkforcePanel[] = [
     sector: 'Hospitality & Culinary',
     roleSample: 'Sous-Chefs, Stewards & Guest Staff',
     readinessWindow: '10-Day Assessment',
-    imageSrc: '/src/assets/images/sector_hospitality_chef_1795355265802.jpg',
+    imageSrc: sectorHospitalityPortrait,
     imageAlt: 'Nepalese executive sous-chef in white double-breasted coat in a commercial hotel kitchen',
   },
   {
@@ -102,13 +112,13 @@ export const HERO_WORKFORCE_PANELS: WorkforcePanel[] = [
     sector: 'Commercial Agriculture',
     roleSample: 'Greenhouse & Agri-Tech Specialists',
     readinessWindow: '14-Day Shortlist',
-    imageSrc: '/src/assets/images/sector_agriculture_specialist_1795355266021.jpg',
+    imageSrc: sectorAgriculturePortrait,
     imageAlt: 'Nepalese commercial agriculture specialist inspecting hydroponic greenhouse crops',
   },
 ];
 
 export const KATHMANDU_SKYLINE_IMAGE = {
-  src: '/src/assets/images/kathmandu_corporate_skyline_1795355265582.jpg',
+  src: kathmanduSkylineBanner,
   alt: 'Panoramic morning view of Kathmandu Valley and Himalayan peaks from central corporate district',
 };
 
@@ -599,7 +609,7 @@ export const JOB_CATEGORIES: JobCategoryPageData[] = [
     summary:
       'Active overseas demands for automated fulfillment centers, cold-chain distribution hubs, heavy articulated fleets, and port terminal operations.',
     vettingProtocol: 'Heavy License Audit & Live Forklift / WMS Yard Trial',
-    imageSrc: '/src/assets/images/logistics_landscape_banner_1795357071489.jpg',
+    imageSrc: logisticsLandscapeBanner,
     imageAlt: 'Nepalese logistics supervisor inside a modern fulfillment warehouse',
     jobs: [
       {
@@ -747,7 +757,7 @@ export const JOB_CATEGORIES: JobCategoryPageData[] = [
     summary:
       'Approved demands for civil infrastructure, MEP engineering, heavy crane operations, and industrial fabrication projects across GCC and Europe.',
     vettingProtocol: 'Hands-On Kathmandu Workshop & Blueprint Trade Evaluation',
-    imageSrc: '/src/assets/images/construction_landscape_banner_1795357073324.jpg',
+    imageSrc: constructionLandscapeBanner,
     imageAlt: 'Nepalese civil construction engineer wearing yellow safety helmet on site',
     jobs: [
       {
@@ -860,7 +870,7 @@ export const JOB_CATEGORIES: JobCategoryPageData[] = [
     summary:
       'Direct international placements for luxury resort kitchens, five-star hotel front offices, banquet service teams, and housekeeping operations.',
     vettingProtocol: 'Live Kitchen Practical & Spoken English Hospitality Assessment',
-    imageSrc: '/src/assets/images/hospitality_landscape_banner_1795357073475.jpg',
+    imageSrc: hospitalityLandscapeBanner,
     imageAlt: 'Nepalese executive sous-chef inside a commercial hotel kitchen',
     jobs: [
       {
@@ -970,7 +980,7 @@ export const JOB_CATEGORIES: JobCategoryPageData[] = [
     summary:
       'Specialized placements for hydroponic glasshouses, automated irrigation operations, packhouse quality grading, and commercial dairy farms.',
     vettingProtocol: 'Agri-Aptitude Screening & English Workplace Assessment',
-    imageSrc: '/src/assets/images/agriculture_landscape_banner_1795357073665.jpg',
+    imageSrc: agricultureLandscapeBanner,
     imageAlt: 'Nepalese commercial agriculture specialist inspecting greenhouse crops',
     jobs: [
       {
@@ -1076,7 +1086,7 @@ export const JOB_CATEGORIES: JobCategoryPageData[] = [
     summary:
       'Disciplined security officers, commercial HVAC maintenance specialists, and building management technicians serving corporate campuses and estates.',
     vettingProtocol: 'Physical Fitness Benchmark, Police Clearance & Technical Audit',
-    imageSrc: '/src/assets/images/kathmandu_corporate_skyline_1795355265582.jpg',
+    imageSrc: kathmanduSkylineBanner,
     imageAlt: 'Kathmandu valley skyline representing Passion Human Resource headquarters',
     jobs: [
       {

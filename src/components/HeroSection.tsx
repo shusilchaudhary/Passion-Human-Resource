@@ -107,7 +107,7 @@ export function HeroSection({
                     }}
                     onMouseEnter={() => setActivePanelId(panel.id)}
                     onFocus={() => setActivePanelId(panel.id)}
-                    className={`group relative overflow-hidden rounded-[3px] text-left cursor-pointer border transition-all duration-200 focus-visible:outline-none block ${
+                    className={`group relative overflow-hidden rounded-[3px] bg-[#0B1F3A] text-left cursor-pointer border transition-all duration-200 focus-visible:outline-none block ${
                       isSelected
                         ? 'border-[#B8860B]'
                         : 'border-slate-200 hover:border-slate-400'
@@ -117,6 +117,7 @@ export function HeroSection({
                       src={panel.imageSrc}
                       alt={panel.imageAlt}
                       fallbackTitle={panel.sector}
+                      priority
                       className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-[1.03]"
                     />
                     <div
